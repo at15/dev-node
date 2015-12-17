@@ -6,7 +6,7 @@ Setup all the Hxx in one directory, this repo contains scripts and full example 
 
 Besides the Hxx, it also have some other software I use very often
 
-- [ ] Hadoop 2.7.1
+- [x] [Hadoop 2.7.1](script/hadoop)
 - [ ] HBase 1.2.1
 - [ ] Hive ?
 - [ ] Cassandra ?
