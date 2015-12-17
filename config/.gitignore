@@ -1,2 +1,4 @@
 *.xml
 !*.example.xml
+*.sh
+!*.example.sh

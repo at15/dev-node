@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# extract the tarball and copy the config, format the name node
+echo "start hadoop as daemon"
 
 # get the script path http://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
 pushd `dirname $0` > /dev/null
@@ -13,16 +13,10 @@ cd ${SCRIPTPATH}
 # switch to app directory
 cd ../../app
 
-if [ -d "hadoop-2.7.1" ];then
-  echo "hadoop already extracted"
-else
-  echo "extracting hadoop tarball"
-  tar zxf ../tarball/hadoop-2.7.1.tar.gz -C .
-  echo "extracted"
-fi
-
 ${SCRIPTPATH}/config.sh
-${SCRIPTPATH}/format.sh
+hadoop-2.7.1/sbin/start-dfs.sh
+
+# TODO: use jps to check if everything is running
 
 # go back to the old working directory
 cd ${ORIGINAL_WD}
