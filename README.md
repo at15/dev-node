@@ -14,14 +14,15 @@ Besides the Hxx, it also have some other software I use very often
 
 ## Scripts
 
-- [ ] extract tarball to `app` folder
-- [ ] copy config 
+- [x] download tarball from mirror.
+- [x] extract tarball to `app` folder
+- [x] copy config 
 - [ ] check common errors when setup hadoop, like forgot to format namenode 
 
 ## Why?
 
 - I want to share hadoop and all the hxx instead of bundle one in every project like https://github.com/at15/forum-search
-- the config for all the hxx is annoying
+- the config for all the hxx is annoying, the doc always forget to mention sth or hide it in somewhere
 - docker is hard to use due to network issue
 
 
