@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <!--TODO: change the databaseName to your directory -->
+        <value>jdbc:derby:;databaseName=/home/at15/workspace/src/github.com/at15/dev-node/data/hive/metastore_db;create=true</value>
+        <description>
+            The JDBC connection url, avoid store metastore_db in local directory
+        </description>
+    </property>
+</configuration>

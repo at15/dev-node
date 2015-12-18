@@ -21,14 +21,16 @@ fi
 
 source ${SCRIPTPATH}/../export.sh
 
-${HADOOP_HOME}/bin/hadoop fs -mkdir       /tmp
-${HADOOP_HOME}/bin/hadoop fs -chmod g+w   /tmp
+hdfs dfs -mkdir       /tmp
+hdfs dfs -chmod g+w   /tmp
 
-${HADOOP_HOME}/bin/hdfs dfs -mkdir /user
-${HADOOP_HOME}/bin/hdfs dfs -mkdir /user/hive
-${HADOOP_HOME}/bin/hdfs dfs -mkdir /user/hive/warehouse
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/hive
+hdfs dfs -mkdir /user/hive/warehouse
+hdfs dfs -chmod g+w /user/hive/warehouse
 
-${HADOOP_HOME}/bin/hdfs dfs -chmod g+w /user/hive/warehouse
+# config
+${SCRIPTPATH}/config.sh
 
 # go back to the old working directory
 cd ${ORIGINAL_WD}
