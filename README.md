@@ -8,9 +8,10 @@ Besides the Hxx, it also have some other software I use very often
 
 - [x] [Hadoop 2.7.1](script/hadoop)
 - [ ] HBase 1.2.1
-- [x] Hive 1.2.1
+- [x] [Hive 1.2.1](script/hive) require hadoop installed
 - [ ] Cassandra ?
 - [ ] KairosDB ?
+- [ ] kafka ?
 
 ## Scripts
 
